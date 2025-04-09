@@ -13,4 +13,5 @@
   --header-width: clamp(375px, 100%, 700px);
   --card-width: clamp(375px, 100%, 696px);
   --card-title-font-size: 1.8rem;
+  --outline-color: #ffffff;
 }

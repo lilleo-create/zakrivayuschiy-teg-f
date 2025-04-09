@@ -20,6 +20,8 @@
   image-rendering: pixelated;
 }
 
+/* -- Шапка -- */
+
 .header {
   display: flex;
   justify-content: center;
@@ -49,18 +51,21 @@
   font-size: var(--subtitle-font-size);
 }
 
+/* -- Карточки -- */
+
 .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   width: var(--card-width);
   margin-block-end: 50px;
+  outline: 2px solid #000;
 }
 
 .card__content {
@@ -72,27 +77,40 @@
 .card__description {
   display: flex;
   flex-direction: column;
+  padding-inline: 25px;
   gap: 27px;
   font-size: var(--card-title-font-size);
 }
 
-.card__footer {
-  display: flex;
-  justify-content: flex-end; /* Прижимает всё вправо */
-  align-items: center;
-  gap: 12px; /* Расстояние между иконкой и кнопкой */
-  padding-inline-end: 25px;
-  padding-block-end: 25px;
-}
-
 .card__title {
   font-size: var(--card-title-font-size);
+  padding-inline-start: 10px;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card__image-wrapper {
+  position: relative;
+  width: clamp(371px, 100%, 696px);
+  display: block;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding-inline-end: 25px;
+  padding-block-end: 25px;
 }
 
 .card__icon-button {
   all: unset;
 }
-
 
 .card__like-button {
   inline-size: 130px;
@@ -110,8 +128,47 @@
   outline: 2px solid #000;
 }
 
+
+/* -- watermark -- */
+
+.card__watermark,
+.card__watermark-fallback {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  mix-blend-mode: hard-light;
+  z-index: 1;
+}
+
+.card__watermark-fallback {
+  display: none;
+  font-family: var(--font-accent);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #000;
+  padding: 2px 4px;
+  text-shadow:
+    -1px -1px 0 var(--outline-color),
+     1px -1px 0 var(--outline-color),
+    -1px  1px 0 var(--outline-color),
+     1px  1px 0 var(--outline-color);
+}
+
+@supports (-webkit-text-stroke: 1px var(--outline-color)) {
+  .card__watermark-fallback {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--outline-color);
+  }
+}
+
+/* -- Кнопка сохранить -- */
+
 .card__save-button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
   inline-size: 335px;
   block-size: 55px;
   margin-block-end: 103px;
+  outline: 2px solid #000;
 }

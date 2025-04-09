@@ -13,4 +13,105 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: url(../images/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 100px;
+  font-family: var(--font-accent);
+  
+}
+
+.header__content {
+  min-block-size: 368px;
+  width: var(--header-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.header__title {
+  font-size: var(--title-font-size);
+}
+
+.header__subtitle {
+  font-size: var(--subtitle-font-size);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: var(--card-width);
+  margin-block-end: 50px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  font-size: var(--card-title-font-size);
+}
+
+.card__footer {
+  display: flex;
+  justify-content: flex-end; /* Прижимает всё вправо */
+  align-items: center;
+  gap: 12px; /* Расстояние между иконкой и кнопкой */
+  padding-inline-end: 25px;
+  padding-block-end: 25px;
+}
+
+.card__title {
+  font-size: var(--card-title-font-size);
+}
+
+.card__icon-button {
+  all: unset;
+}
+
+
+.card__like-button {
+  inline-size: 130px;
+  block-size: 38px;
+}
+
+.button__text {
+  font-family: var(--font-accent);
+  font-size: 1.4rem;
+}
+
+.card__like-button {
+  background-color: transparent;
+  border: none;
+  outline: 2px solid #000;
+}
+
+.card__save-button {
+  inline-size: 335px;
+  block-size: 55px;
+  margin-block-end: 103px;
 }

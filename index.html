@@ -1,18 +1,456 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-  </head>
-  <body class="page">
-    <header class="header"></header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Закрывающий тег</title>
+  <!-- SVG favicon -->
+  <link rel="icon" type="image/svg+xml" href="./images/favicon (1).svg" />
+  <!-- PNG favicon fallbacks -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+  <!-- ICO fallback -->
+  <link rel="icon" href="./images/favicon.ico" sizes="any" />
+  <!-- iOS / смартфоны -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon-180x180.png" />
+
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+</head>
+
+<body class="page">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-floppy" viewBox="0 0 40 40">
+      <path fill="#000"
+        d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z" />
+    </symbol>
+  </svg>
+
+  <header class="header">
+    <div class="header__content">
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <p class="header__subtitle">закрывающий тег</p>
+    </div>
+  </header>
+  <main>
+    <div class="cards">
+      <article class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div class="card__content">
+          <picture>
+            <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
+            <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image" />
+          </picture>
+          <div class="card__description">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу, и,
+            возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+
+          <div class="card__footer">
+            <button class="card__icon-button" type="button">
+              <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0H3V3H6V0Z" fill="black" />
+                <path d="M9 0H6V3H9V0Z" fill="black" />
+                <path d="M3 3H0V6H3V3Z" fill="black" />
+                <path d="M3 6H0V9H3V6Z" fill="black" />
+                <path d="M3 9H0V12H3V9Z" fill="black" />
+                <path d="M12 0H9V3H12V0Z" fill="black" />
+                <path d="M6 12H3V15H6V12Z" fill="black" />
+                <path d="M9 15H6V18H9V15Z" fill="black" />
+                <path d="M12 18H9V21H12V18Z" fill="black" />
+                <path d="M21 0H24V3H21V0Z" fill="black" />
+                <path d="M18 0H21V3H18V0Z" fill="black" />
+                <path d="M24 3H27V6H24V3Z" fill="black" />
+                <path d="M24 6H27V9H24V6Z" fill="black" />
+                <path d="M24 9H27V12H24V9Z" fill="black" />
+                <path d="M15 0H18V3H15V0Z" fill="black" />
+                <path d="M21 12H24V15H21V12Z" fill="black" />
+                <path d="M18 15H21V18H18V15Z" fill="black" />
+                <path d="M15 18H18V21H15V18Z" fill="black" />
+                <path d="M15 3H12V6H15V3Z" fill="black" />
+                <path d="M15 21H12V24H15V21Z" fill="black" />
+              </svg>
+            </button>
+
+            <button class="card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div class="card__content">
+          <picture>
+            <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
+            <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image" />
+          </picture>
+          <div class="card__description">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу, и,
+            возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+
+          <div class="card__footer">
+            <button class="card__icon-button" type="button">
+              <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0H3V3H6V0Z" fill="black" />
+                <path d="M9 0H6V3H9V0Z" fill="black" />
+                <path d="M3 3H0V6H3V3Z" fill="black" />
+                <path d="M3 6H0V9H3V6Z" fill="black" />
+                <path d="M3 9H0V12H3V9Z" fill="black" />
+                <path d="M12 0H9V3H12V0Z" fill="black" />
+                <path d="M6 12H3V15H6V12Z" fill="black" />
+                <path d="M9 15H6V18H9V15Z" fill="black" />
+                <path d="M12 18H9V21H12V18Z" fill="black" />
+                <path d="M21 0H24V3H21V0Z" fill="black" />
+                <path d="M18 0H21V3H18V0Z" fill="black" />
+                <path d="M24 3H27V6H24V3Z" fill="black" />
+                <path d="M24 6H27V9H24V6Z" fill="black" />
+                <path d="M24 9H27V12H24V9Z" fill="black" />
+                <path d="M15 0H18V3H15V0Z" fill="black" />
+                <path d="M21 12H24V15H21V12Z" fill="black" />
+                <path d="M18 15H21V18H18V15Z" fill="black" />
+                <path d="M15 18H18V21H15V18Z" fill="black" />
+                <path d="M15 3H12V6H15V3Z" fill="black" />
+                <path d="M15 21H12V24H15V21Z" fill="black" />
+              </svg>
+            </button>
+
+            <button class="card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div class="card__content">
+          <picture>
+            <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
+            <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image" />
+          </picture>
+          <div class="card__description">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу, и,
+            возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+
+          <div class="card__footer">
+            <button class="card__icon-button" type="button">
+              <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0H3V3H6V0Z" fill="black" />
+                <path d="M9 0H6V3H9V0Z" fill="black" />
+                <path d="M3 3H0V6H3V3Z" fill="black" />
+                <path d="M3 6H0V9H3V6Z" fill="black" />
+                <path d="M3 9H0V12H3V9Z" fill="black" />
+                <path d="M12 0H9V3H12V0Z" fill="black" />
+                <path d="M6 12H3V15H6V12Z" fill="black" />
+                <path d="M9 15H6V18H9V15Z" fill="black" />
+                <path d="M12 18H9V21H12V18Z" fill="black" />
+                <path d="M21 0H24V3H21V0Z" fill="black" />
+                <path d="M18 0H21V3H18V0Z" fill="black" />
+                <path d="M24 3H27V6H24V3Z" fill="black" />
+                <path d="M24 6H27V9H24V6Z" fill="black" />
+                <path d="M24 9H27V12H24V9Z" fill="black" />
+                <path d="M15 0H18V3H15V0Z" fill="black" />
+                <path d="M21 12H24V15H21V12Z" fill="black" />
+                <path d="M18 15H21V18H18V15Z" fill="black" />
+                <path d="M15 18H18V21H15V18Z" fill="black" />
+                <path d="M15 3H12V6H15V3Z" fill="black" />
+                <path d="M15 21H12V24H15V21Z" fill="black" />
+              </svg>
+            </button>
+
+            <button class="card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div class="card__content">
+          <picture>
+            <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
+            <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image" />
+          </picture>
+          <div class="card__description">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу, и,
+            возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+
+          <div class="card__footer">
+            <button class="card__icon-button" type="button">
+              <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0H3V3H6V0Z" fill="black" />
+                <path d="M9 0H6V3H9V0Z" fill="black" />
+                <path d="M3 3H0V6H3V3Z" fill="black" />
+                <path d="M3 6H0V9H3V6Z" fill="black" />
+                <path d="M3 9H0V12H3V9Z" fill="black" />
+                <path d="M12 0H9V3H12V0Z" fill="black" />
+                <path d="M6 12H3V15H6V12Z" fill="black" />
+                <path d="M9 15H6V18H9V15Z" fill="black" />
+                <path d="M12 18H9V21H12V18Z" fill="black" />
+                <path d="M21 0H24V3H21V0Z" fill="black" />
+                <path d="M18 0H21V3H18V0Z" fill="black" />
+                <path d="M24 3H27V6H24V3Z" fill="black" />
+                <path d="M24 6H27V9H24V6Z" fill="black" />
+                <path d="M24 9H27V12H24V9Z" fill="black" />
+                <path d="M15 0H18V3H15V0Z" fill="black" />
+                <path d="M21 12H24V15H21V12Z" fill="black" />
+                <path d="M18 15H21V18H18V15Z" fill="black" />
+                <path d="M15 18H18V21H15V18Z" fill="black" />
+                <path d="M15 3H12V6H15V3Z" fill="black" />
+                <path d="M15 21H12V24H15V21Z" fill="black" />
+              </svg>
+            </button>
+
+            <button class="card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div class="card__content">
+          <picture>
+            <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
+            <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image" />
+          </picture>
+          <div class="card__description">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу, и,
+            возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+
+          <div class="card__footer">
+            <button class="card__icon-button" type="button">
+              <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0H3V3H6V0Z" fill="black" />
+                <path d="M9 0H6V3H9V0Z" fill="black" />
+                <path d="M3 3H0V6H3V3Z" fill="black" />
+                <path d="M3 6H0V9H3V6Z" fill="black" />
+                <path d="M3 9H0V12H3V9Z" fill="black" />
+                <path d="M12 0H9V3H12V0Z" fill="black" />
+                <path d="M6 12H3V15H6V12Z" fill="black" />
+                <path d="M9 15H6V18H9V15Z" fill="black" />
+                <path d="M12 18H9V21H12V18Z" fill="black" />
+                <path d="M21 0H24V3H21V0Z" fill="black" />
+                <path d="M18 0H21V3H18V0Z" fill="black" />
+                <path d="M24 3H27V6H24V3Z" fill="black" />
+                <path d="M24 6H27V9H24V6Z" fill="black" />
+                <path d="M24 9H27V12H24V9Z" fill="black" />
+                <path d="M15 0H18V3H15V0Z" fill="black" />
+                <path d="M21 12H24V15H21V12Z" fill="black" />
+                <path d="M18 15H21V18H18V15Z" fill="black" />
+                <path d="M15 18H18V21H15V18Z" fill="black" />
+                <path d="M15 3H12V6H15V3Z" fill="black" />
+                <path d="M15 21H12V24H15V21Z" fill="black" />
+              </svg>
+            </button>
+
+            <button class="card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div class="card__content">
+          <picture>
+            <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
+            <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image" />
+          </picture>
+          <div class="card__description">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу, и,
+            возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+
+          <div class="card__footer">
+            <button class="card__icon-button" type="button">
+              <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0H3V3H6V0Z" fill="black" />
+                <path d="M9 0H6V3H9V0Z" fill="black" />
+                <path d="M3 3H0V6H3V3Z" fill="black" />
+                <path d="M3 6H0V9H3V6Z" fill="black" />
+                <path d="M3 9H0V12H3V9Z" fill="black" />
+                <path d="M12 0H9V3H12V0Z" fill="black" />
+                <path d="M6 12H3V15H6V12Z" fill="black" />
+                <path d="M9 15H6V18H9V15Z" fill="black" />
+                <path d="M12 18H9V21H12V18Z" fill="black" />
+                <path d="M21 0H24V3H21V0Z" fill="black" />
+                <path d="M18 0H21V3H18V0Z" fill="black" />
+                <path d="M24 3H27V6H24V3Z" fill="black" />
+                <path d="M24 6H27V9H24V6Z" fill="black" />
+                <path d="M24 9H27V12H24V9Z" fill="black" />
+                <path d="M15 0H18V3H15V0Z" fill="black" />
+                <path d="M21 12H24V15H21V12Z" fill="black" />
+                <path d="M18 15H21V18H18V15Z" fill="black" />
+                <path d="M15 18H18V21H15V18Z" fill="black" />
+                <path d="M15 3H12V6H15V3Z" fill="black" />
+                <path d="M15 21H12V24H15V21Z" fill="black" />
+              </svg>
+            </button>
+
+            <button class="card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div class="card__content">
+          <picture>
+            <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
+            <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image" />
+          </picture>
+          <div class="card__description">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу, и,
+            возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+
+          <div class="card__footer">
+            <button class="card__icon-button" type="button">
+              <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0H3V3H6V0Z" fill="black" />
+                <path d="M9 0H6V3H9V0Z" fill="black" />
+                <path d="M3 3H0V6H3V3Z" fill="black" />
+                <path d="M3 6H0V9H3V6Z" fill="black" />
+                <path d="M3 9H0V12H3V9Z" fill="black" />
+                <path d="M12 0H9V3H12V0Z" fill="black" />
+                <path d="M6 12H3V15H6V12Z" fill="black" />
+                <path d="M9 15H6V18H9V15Z" fill="black" />
+                <path d="M12 18H9V21H12V18Z" fill="black" />
+                <path d="M21 0H24V3H21V0Z" fill="black" />
+                <path d="M18 0H21V3H18V0Z" fill="black" />
+                <path d="M24 3H27V6H24V3Z" fill="black" />
+                <path d="M24 6H27V9H24V6Z" fill="black" />
+                <path d="M24 9H27V12H24V9Z" fill="black" />
+                <path d="M15 0H18V3H15V0Z" fill="black" />
+                <path d="M21 12H24V15H21V12Z" fill="black" />
+                <path d="M18 15H21V18H18V15Z" fill="black" />
+                <path d="M15 18H18V21H15V18Z" fill="black" />
+                <path d="M15 3H12V6H15V3Z" fill="black" />
+                <path d="M15 21H12V24H15V21Z" fill="black" />
+              </svg>
+            </button>
+
+            <button class="card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div class="card__content">
+          <picture>
+            <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
+            <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image" />
+          </picture>
+          <div class="card__description">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу, и,
+            возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+
+          <div class="card__footer">
+            <button class="card__icon-button" type="button">
+              <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0H3V3H6V0Z" fill="black" />
+                <path d="M9 0H6V3H9V0Z" fill="black" />
+                <path d="M3 3H0V6H3V3Z" fill="black" />
+                <path d="M3 6H0V9H3V6Z" fill="black" />
+                <path d="M3 9H0V12H3V9Z" fill="black" />
+                <path d="M12 0H9V3H12V0Z" fill="black" />
+                <path d="M6 12H3V15H6V12Z" fill="black" />
+                <path d="M9 15H6V18H9V15Z" fill="black" />
+                <path d="M12 18H9V21H12V18Z" fill="black" />
+                <path d="M21 0H24V3H21V0Z" fill="black" />
+                <path d="M18 0H21V3H18V0Z" fill="black" />
+                <path d="M24 3H27V6H24V3Z" fill="black" />
+                <path d="M24 6H27V9H24V6Z" fill="black" />
+                <path d="M24 9H27V12H24V9Z" fill="black" />
+                <path d="M15 0H18V3H15V0Z" fill="black" />
+                <path d="M21 12H24V15H21V12Z" fill="black" />
+                <path d="M18 15H21V18H18V15Z" fill="black" />
+                <path d="M15 18H18V21H15V18Z" fill="black" />
+                <path d="M15 3H12V6H15V3Z" fill="black" />
+                <path d="M15 21H12V24H15V21Z" fill="black" />
+              </svg>
+            </button>
+
+            <button class="card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <button class="card__save-button" type="button">
+        <svg class="floppy-icon" width="21" height="21">
+          <use href="#icon-floppy" />
+        </svg>
+        <span class="button__text">Сохранить на&nbsp;память</span>
+      </button>
+    </div>
+
+    
+    
+
+  </main>
+  <script src="./scripts/like.js"></script>
+</body>
+
 </html>

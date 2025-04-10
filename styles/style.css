@@ -11,12 +11,12 @@
 */
 
 .page {
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  background-image: url(../images/background.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   image-rendering: pixelated;
 }
 
@@ -24,23 +24,23 @@
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding-block: 100px;
   font-family: var(--font-accent);
   
 }
 
 .header__content {
-  min-block-size: 368px;
-  width: var(--header-width);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: #fff;
+  width: var(--header-width);
   border: 2px solid #000;
+  background-color: #fff;
+  min-block-size: 368px;
 }
 
 .header__title {
@@ -62,10 +62,10 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
   width: var(--card-width);
   margin-block-end: 50px;
-  outline: 2px solid #000;
+  border: 2px solid #000;
+  background-color: #fff;
 }
 
 .card__content {
@@ -77,26 +77,32 @@
 .card__description {
   display: flex;
   flex-direction: column;
-  padding-inline: 25px;
   gap: 27px;
+  padding-inline: 25px;
   font-size: var(--card-title-font-size);
+  
 }
 
 .card__title {
-  font-size: var(--card-title-font-size);
   padding-inline-start: 10px;
+  padding-block-end: 5.5px;
+  font-size: var(--card-title-font-size);
+  border: 2px solid #000;
 }
 
 .card__image {
-  width: 100%;
-  height: auto;
   display: block;
+  width: 100%;
+  border: 2px solid #000;
+  
 }
+
+
 
 .card__image-wrapper {
   position: relative;
-  width: clamp(371px, 100%, 696px);
   display: block;
+  width: clamp(371px, 100%, 696px);
 }
 
 .card__footer {
@@ -120,12 +126,13 @@
 .button__text {
   font-family: var(--font-accent);
   font-size: 1.4rem;
+  padding-block-end: 25px;
 }
 
 .card__like-button {
-  background-color: transparent;
   border: none;
   outline: 2px solid #000;
+  background-color: transparent;
 }
 
 
@@ -136,17 +143,17 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  mix-blend-mode: hard-light;
   z-index: 1;
+  mix-blend-mode: hard-light;
 }
 
 .card__watermark-fallback {
   display: none;
+  padding: 2px 4px;
+  color: #000;
   font-family: var(--font-accent);
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: #000;
-  padding: 2px 4px;
   text-shadow:
     -1px -1px 0 var(--outline-color),
      1px -1px 0 var(--outline-color),
@@ -165,10 +172,101 @@
 
 .card__save-button {
   display: flex;
-  gap: 8px;
   align-items: center;
-  inline-size: 335px;
-  block-size: 55px;
+  gap: 8px;
   margin-block-end: 103px;
   outline: 2px solid #000;
+  inline-size: 335px;
+  min-block-size: 55px;
 }
+
+/* -- Фильтры для изображений -- */
+
+.card__image--warm {
+  filter: var(--filter-image-warm);
+}
+
+.card__image--psy {
+  filter: var(--filter-image-psy);
+}
+
+.card__image--sepia {
+  filter: var(--filter-image-sepia);
+}
+
+.card__image--mint {
+  filter: var(--filter-image-mint);
+}
+
+.card__image--gray {
+  filter: var(--filter-image-gray);
+}
+
+.card__image--blur {
+  filter: var(--filter-image-blur);
+  
+}
+
+.card__image--red {
+  filter: var(--filter-image-red);
+}
+
+/* --Модальное окно-- */
+
+.modal {
+  display: none;
+  border: 2px solid black;
+  padding: 30px;
+  color: black;
+  font-family: var(--font-accent);
+  text-align: center;
+  background-color: #fff;
+  max-inline-size: 353px;
+}
+
+.modal[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* --Контент модального окна-- */
+
+.modal__content{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--font-accent);
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.modal__column {
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+
+.modal__text {
+  font-size: 1.4rem;
+  line-height: 22px;
+}
+
+.modal__button {
+  border: 2px solid black;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  min-inline-size: 293px;
+  min-block-size: 38px;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+@media (width <= 375px) {
+
+
+}
+

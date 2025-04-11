@@ -38,9 +38,12 @@
   justify-content: center;
   align-items: center;
   width: var(--header-width);
-  border: 2px solid #000;
+  outline: 2px solid #000;
   background-color: #fff;
   min-block-size: 368px;
+  gap: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .header__title {
@@ -62,9 +65,9 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: var(--card-width);
+  inline-size: var(--card-width);
   margin-block-end: 50px;
-  border: 2px solid #000;
+  outline: 2px solid #000;
   background-color: #fff;
 }
 
@@ -85,7 +88,8 @@
 
 .card__title {
   padding-inline-start: 10px;
-  padding-block-end: 5.5px;
+  padding-block-end: 3px;
+  padding-block-start: 3px;
   font-size: var(--card-title-font-size);
   border: 2px solid #000;
 }
@@ -93,8 +97,13 @@
 .card__image {
   display: block;
   width: 100%;
-  border: 2px solid #000;
-  
+  max-block-size: 696px;
+}
+
+.card__image-border {
+  display: inline-block;
+  padding: 1px; /* отступ от рамки до изображения */
+  border-bottom: 2px solid #000;
 }
 
 
@@ -102,7 +111,8 @@
 .card__image-wrapper {
   position: relative;
   display: block;
-  width: clamp(371px, 100%, 696px);
+  inline-size: clamp(371px, 100%, 696px);
+  max-block-size: 696px;
 }
 
 .card__footer {

@@ -18,9 +18,7 @@ body {
 
 .page {
   font-family: var(--font-main);
-  font-variation-settings:
-    "wght" var(--wght),
-    "wdth" var(--wdth);
+  font-variation-settings: "wght" var(--wght), "wdth" var(--wdth);
   
 }
 

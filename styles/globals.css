@@ -12,14 +12,25 @@ html {
   font-size: 65.5%;
 }
 
+
+
 body {
   margin: 0;
+  font-family: var(--font-main);
+  font-variation-settings: "wght" var(--wght), "wdth" var(--wdth);
 }
 
 .page {
   font-family: var(--font-main);
   font-variation-settings: "wght" var(--wght), "wdth" var(--wdth);
-  
+  background-image:
+  repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+  linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 

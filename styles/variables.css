@@ -15,9 +15,13 @@
   --font-wegt: 400px;
   --card-width: clamp(375px, 100%, 700px);
   --card-title-font-size: 1.7rem;
-  --outline-color: #ffffff;
+  --outline-color: #fff;
   --accent-color: #000;
   --hover-color: #fff;
+  --button-color: #fff;
+  --main-bg-color: #000;
+  --contour-color: black;
+  --animation-fill-color: red;
   --filter-image-warm: grayscale(0.4) brightness(0.8) contrast(1.1) sepia(0.4);
   --filter-image-psy: brightness(1.5) saturate(8) hue-rotate(290deg) contrast(1.4);
   --filter-image-sepia: grayscale(0.3) brightness(0.9) contrast(1.1) sepia(0.5) hue-rotate(-15deg);

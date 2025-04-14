@@ -9,3 +9,83 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+
+.button-animated {
+  position: relative;
+  color: var(--button-color);
+}
+
+.button-animated .floppy-icon {
+  position: relative;
+  z-index: 10;
+  mix-blend-mode: difference;
+}
+
+.button-animated::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: var(--main-bg-color);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.button-animated:hover::after {
+  transform: scaleX(1);
+}
+
+
+.like-icon {
+  display: block;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.sparks {
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Тело сердца */
+.heart .core,
+.heart .main-body {
+  fill: none;
+  transition: fill 0.3s ease;
+}
+
+/* Контур — не анимируем */
+.heart .contour {
+  fill: var(--contour-color);
+}
+
+/* При лайке */
+.card__icon-button.is-liked .heart {
+  animation: heart-bump 0.3s ease forwards;
+}
+
+.card__icon-button.is-liked .core,
+.card__icon-button.is-liked .main-body {
+  fill: var(--animation-fill-color);
+}
+
+.card__icon-button.is-liked .sparks {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+/* Анимация масштабирования сердца */
+@keyframes heart-bump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

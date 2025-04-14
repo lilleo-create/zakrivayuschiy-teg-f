@@ -29,13 +29,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  inline-size: var(--header-width);
-  border: 2px solid #000;
-  background-color: #fff;
-  min-block-size: 364px;
   gap: 20px;
-  text-transform: uppercase;
+  border: 2px solid #000;
   font-weight: 400;
+  text-transform: uppercase;
+  background-color: #fff;
+  inline-size: var(--header-width);
+  min-block-size: 364px;
 }
 
 .header__title {
@@ -58,10 +58,10 @@
 .card {
   display: flex;
   flex-direction: column;
-  inline-size: var(--card-width);
   margin-block-end: 50px;
   border: 2px solid #000;
   background-color: #fff;
+  inline-size: var(--card-width);
 }
 
 .card__content {
@@ -79,10 +79,10 @@
 }
 
 .card__title {
-  font-family: var(--font-main);
   padding-inline: 10px;
-  padding-block-end: 6px;
   padding-block-start: 6px;
+  padding-block-end: 6px;
+  font-family: var(--font-main);
   font-size: var(--card-title-font-size);
 }
 
@@ -95,7 +95,6 @@
 .card__image-border {
   display: inline-block;
   border-bottom: 2px solid #000;
- 
 }
 
 .card__text {
@@ -114,56 +113,44 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
+  gap: 9px;
   padding-inline-end: 25px;
   padding-block-end: 25px;
 }
 
 .card__icon-button {
-  all: unset;
-}
-
-.like-icon {
-  padding-block-start: 5px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  block-size: 38px;
+  aspect-ratio: 1 / 1;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  padding: 0;
+  cursor: pointer;
 }
 
 .card__like-button {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border: 2px solid black;
-  inline-size: 130px;
-  block-size: 38px;
+  color: #fff;
   background-color: white;
   cursor: pointer;
-  overflow: hidden;
-  isolation: isolate;
-  position: relative;
+  inline-size: 130px;
+  block-size: 38px;
 }
 
-.card__like-button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: black;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
-  z-index: 1;
-}
-
-.card__like-button:hover::before {
-  transform: scaleX(1);
-}
 
 .button__text {
-  color: white;
-  mix-blend-mode: difference;
-  font-family: var(--font-accent);
-  font-size: 1.4rem;
   position: relative;
   z-index: 2;
+  color: white;
+  font-family: var(--font-accent);
+  font-size: 1.4rem;
+  mix-blend-mode: difference;
 }
 
 /* -- watermark -- */
@@ -186,9 +173,9 @@
   text-transform: uppercase;
   text-shadow:
     -1px -1px 0 var(--outline-color),
-     1px -1px 0 var(--outline-color),
+    1px -1px 0 var(--outline-color),
     -1px  1px 0 var(--outline-color),
-     1px  1px 0 var(--outline-color);
+    1px  1px 0 var(--outline-color);
 }
 
 @supports (-webkit-text-stroke: 1px var(--outline-color)) {
@@ -203,11 +190,11 @@
 
 .card__save-button {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 8px;
   margin-block-end: 103px;
-  border: 2px solid #000;
+  border: 2px solid var(--accent-color);
   inline-size: 335px;
   min-block-size: 55px;
 }
@@ -248,7 +235,7 @@
 
 .modal {
   display: none;
-  border: 2px solid black;
+  border: 2px solid var(--accent-color);
   padding: 30px;
   color: black;
   font-family: var(--font-accent);
@@ -258,7 +245,7 @@
 }
 
 .modal[open] {
- display: flex;
+  display: flex;
   flex-direction: column;
   gap: 30px;
 }
@@ -286,17 +273,18 @@
 }
 
 .modal__button {
-  border: 2px solid black;
+  border: 2px solid var(--accent-color);
   text-transform: uppercase;
   background-color: transparent;
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
   min-inline-size: 293px;
   min-block-size: 38px;
-  transition: box-shadow 0.3s ease;
 }
 
 .modal::backdrop {
-  background: rgba(0, 0, 0, 0.75);
+  background: var(--main-bg-color);
+  opacity: 0.75;
 }
 
 /* --Состояние Focus и Hover-- */
@@ -308,6 +296,13 @@
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
+.card__icon-button:focus {
+  outline: none; /* убираем стандартную обводку */
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--accent-color); /* подставь свою переменную */
+}
 
 /* --Медиа-- */
 
@@ -334,9 +329,9 @@
 }
 
 .card__save-button {
+  flex-direction: column;
   inline-size: 306px;
   min-block-size: 84px;
-  flex-direction: column;
 }
 
 }

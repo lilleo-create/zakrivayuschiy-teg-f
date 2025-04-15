@@ -2,24 +2,24 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Закрывающий тег</title>
   <!-- SVG favicon -->
-  <link rel="icon" type="image/svg+xml" href="./svg/favicon (1).svg" />
+  <link rel="icon" type="image/svg+xml" href="./svg/favicon(1).svg">
   <!-- PNG favicon fallbacks -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
   <!-- ICO fallback -->
-  <link rel="icon" href="./images/favicon.ico" sizes="any" />
+  <link rel="icon" href="./images/favicon.ico" sizes="any">
   <!-- iOS / смартфоны -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon-180x180.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon-180x180.png">
 
-  <link rel="stylesheet" href="./fonts/fonts.css" />
-<link rel="stylesheet" href="./styles/variables.css" />
-<link rel="stylesheet" href="./styles/globals.css" />
-<link rel="stylesheet" href="./styles/style.css" />
-<link rel="stylesheet" href="./styles/animations.css" />
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/animations.css">
 </head>
 
 <body class="page">
@@ -42,45 +42,49 @@
         <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <div class="card__content">
           <div class="card__image-border">
-          <div class="card__image-wrapper">
-            <picture>
-              <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
-              <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image" />
-            </picture>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp">
+                <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image" loading="lazy">
+              </picture>
 
-            <img class="card__watermark" src="./images/watermark-1-2.png" alt="Водяной знак с надписью </HTML>"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-            <span class="card__watermark-fallback">&lt;/HTML&gt;</span>
+              <img class="card__watermark" src="./images/watermark-1-2.png" alt="Водяной знак с надписью /HTML" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" >
+              <span class="card__watermark-fallback">&lt;/HTML&gt;</span>
+            </div>
           </div>
-        </div>
 
           <div class="card__description">
             <p class="card__text">
-              Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+              Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И,
+              возможно, подумать, как новые знания могут повлиять на ваше будущее.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний&nbsp;о начале обучения.
+              Первый шаг — самый волнительный. Я открыл платформу, и началось: незнакомые слова, первые попытки, первые
+              страхи. Всё было новым, даже слегка пугающим. Но где-то внутри уже тогда появилось ощущение: «Я
+              справлюсь». С этого всё и началось.
             </p>
           </div>
 
           <div class="card__footer">
             <button class="card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-                
                 <g class="heart">
                   <!-- Контур -->
-                <path class="contour" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z"/>
+                  <path class="contour" fill="var(--contour-color)"
+                    d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
                   <!-- Основное тело -->
-                <path class="main-body" transform="translate(5.5, 7)" fill="none" d="M6 0H3v3h3V0ZM6 3H3v3h3V3ZM9 6H6v3h3V6ZM12 3H9v3h3V3ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 9H3v3h3V9ZM6 12H3v3h3v-3ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM12 9H9v3h3V9ZM12 6H9v3h3V6ZM12 15H9v3h3v-3ZM12 12H9v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM21 3h3v3h-3V3ZM18 3h3v3h-3V3ZM21 6h3v3h-3V6ZM18 6h3v3h-3V6ZM15 3h3v3h-3V3ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 9h3v3h-3V9ZM21 12h3v3h-3v-3ZM18 9h3v3h-3V9ZM18 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 9h3v3h-3V9ZM15 6h3v3h-3V6ZM15 15h3v3h-3v-3ZM15 12h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 9h-3v3h3V9ZM15 6h-3v3h3V6ZM15 15h-3v3h3v-3ZM15 12h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3Z"/>
+                  <path class="main-body" fill="none"
+                    d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
                   <!-- Сердцевина -->
-                <path class="core" d="M21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z"/><path fill="#000" d="M21 27h-3v3h3v-3Z"/>
+                  <path class="core" fill="none"
+                    d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
                 </g>
                 <g class="sparks">
-                  <path class="spark" fill="var(--animation-fill-color)" d="M12 6H9v3h3V6ZM12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 15H9v3h3v-3ZM12 18H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3ZM18 15h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 15h3v3h-3v-3ZM27 18h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 15h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 21h-3v3h3v-3ZM21 18h-3v3h3v-3ZM21 24h-3v3h3v-3ZM21 27h-3v3h3v-3Z"/>
+                  <path class="spark" fill="var(--animation-fill-color)"
+                    d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
                 </g>
-              </svg>
-              
-            </button>
+              </svg> </button>
 
             <button class="card__like-button button-animated" type="button">
               <span class="button__text">Like</span>
@@ -93,17 +97,17 @@
 
         <div class="card__content">
           <div class="card__image-border">
-          <div class="card__image-wrapper">
-            <picture>
-              <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
-              <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--warm" />
-            </picture>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" >
+                <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--warm" loading="lazy">
+              </picture>
 
-            <img class="card__watermark" src="./images/watermark-1-2.png" alt="Водяной знак с надписью </HTML>"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-            <span class="card__watermark-fallback">&lt;/HTML&gt;</span>
+              <img class="card__watermark" src="./images/watermark-1-2.png" alt="Водяной знак с надписью /HTML" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" >
+              <span class="card__watermark-fallback">&lt;/HTML&gt;</span>
+            </div>
           </div>
-</div>
           <div class="card__description">
             <p class="card__text">
               На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них —
@@ -112,27 +116,30 @@
               справлюсь?
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний о начале первого спринта. </p>
+              Было немного страшно — я ведь вообще не знал, с какой стороны подойти. Но именно в этом и была сила: я мог
+              впитывать всё с нуля, без ожиданий, без давления. Каждый модуль — как штрих на белом листе, из которых
+              начал складываться мой путь.
           </div>
 
           <div class="card__footer">
             <button class="card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-                
                 <g class="heart">
                   <!-- Контур -->
-                <path class="contour" fill="var(--contour-color)" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z"/>
+                  <path class="contour" fill="var(--contour-color)"
+                    d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
                   <!-- Основное тело -->
-                <path class="main-body" transform="translate(5.5, 7)" fill="none" d="M6 0H3v3h3V0ZM6 3H3v3h3V3ZM9 6H6v3h3V6ZM12 3H9v3h3V3ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 9H3v3h3V9ZM6 12H3v3h3v-3ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM12 9H9v3h3V9ZM12 6H9v3h3V6ZM12 15H9v3h3v-3ZM12 12H9v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM21 3h3v3h-3V3ZM18 3h3v3h-3V3ZM21 6h3v3h-3V6ZM18 6h3v3h-3V6ZM15 3h3v3h-3V3ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 9h3v3h-3V9ZM21 12h3v3h-3v-3ZM18 9h3v3h-3V9ZM18 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 9h3v3h-3V9ZM15 6h3v3h-3V6ZM15 15h3v3h-3v-3ZM15 12h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 9h-3v3h3V9ZM15 6h-3v3h3V6ZM15 15h-3v3h3v-3ZM15 12h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3Z"/>
+                  <path class="main-body" fill="none"
+                    d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
                   <!-- Сердцевина -->
-                <path class="core" fill="none" d="M21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z"/><path fill="#000" d="M21 27h-3v3h3v-3Z"/>
+                  <path class="core" fill="none"
+                    d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
                 </g>
                 <g class="sparks">
-                  <path class="spark" fill="var(--animation-fill-color)" d="M12 6H9v3h3V6ZM12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 15H9v3h3v-3ZM12 18H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3ZM18 15h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 15h3v3h-3v-3ZM27 18h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 15h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 21h-3v3h3v-3ZM21 18h-3v3h3v-3ZM21 24h-3v3h3v-3ZM21 27h-3v3h3v-3Z"/>
+                  <path class="spark" fill="var(--animation-fill-color)"
+                    d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
                 </g>
-              </svg>
-              
-            </button>
+              </svg> </button>
 
             <button class="card__like-button button-animated" type="button">
               <span class="button__text">Like</span>
@@ -145,45 +152,48 @@
 
         <div class="card__content">
           <div class="card__image-border">
-          <div class="card__image-wrapper">
-            <picture>
-              <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
-              <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--psy" />
-            </picture>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" >
+                <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--psy" loading="lazy">
+              </picture>
 
-            <img class="card__watermark" src="./images/watermark-3.png" alt="Водяной знак с надписью <CSS>"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-            <span class="card__watermark-fallback">&lt;/HTML&gt;</span>
+              <img class="card__watermark" src="./images/watermark-3.png" alt="Водяной знак с надписью CSS" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" >
+              <span class="card__watermark-fallback">&lt;CSS&gt;</span>
+            </div>
           </div>
-        </div>
           <div class="card__description">
             <p class="card__text">
               Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться
               ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний об окончании первого спринта.
+              Этот вопрос звучал у меня в голове громче всего. Я сомневался в себе и в своём выборе. Но каждый
+              выполненный шаг, каждая маленькая победа будто шептали: «Ты не обязан быть идеальным. Ты просто должен
+              продолжать».
             </p>
           </div>
 
           <div class="card__footer">
             <button class="card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-                
                 <g class="heart">
                   <!-- Контур -->
-                <path class="contour" fill="var(--contour-color)" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z"/>
+                  <path class="contour" fill="var(--contour-color)"
+                    d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
                   <!-- Основное тело -->
-                <path class="main-body" transform="translate(5.5, 7)" fill="none" d="M6 0H3v3h3V0ZM6 3H3v3h3V3ZM9 6H6v3h3V6ZM12 3H9v3h3V3ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 9H3v3h3V9ZM6 12H3v3h3v-3ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM12 9H9v3h3V9ZM12 6H9v3h3V6ZM12 15H9v3h3v-3ZM12 12H9v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM21 3h3v3h-3V3ZM18 3h3v3h-3V3ZM21 6h3v3h-3V6ZM18 6h3v3h-3V6ZM15 3h3v3h-3V3ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 9h3v3h-3V9ZM21 12h3v3h-3v-3ZM18 9h3v3h-3V9ZM18 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 9h3v3h-3V9ZM15 6h3v3h-3V6ZM15 15h3v3h-3v-3ZM15 12h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 9h-3v3h3V9ZM15 6h-3v3h3V6ZM15 15h-3v3h3v-3ZM15 12h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3Z"/>
+                  <path class="main-body" fill="none"
+                    d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
                   <!-- Сердцевина -->
-                <path class="core" fill="none" d="M21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z"/><path fill="#000" d="M21 27h-3v3h3v-3Z"/>
+                  <path class="core" fill="none"
+                    d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
                 </g>
                 <g class="sparks">
-                  <path class="spark" fill="var(--animation-fill-color)" d="M12 6H9v3h3V6ZM12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 15H9v3h3v-3ZM12 18H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3ZM18 15h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 15h3v3h-3v-3ZM27 18h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 15h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 21h-3v3h3v-3ZM21 18h-3v3h3v-3ZM21 24h-3v3h3v-3ZM21 27h-3v3h3v-3Z"/>
+                  <path class="spark" fill="var(--animation-fill-color)"
+                    d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
                 </g>
-              </svg>
-              
-            </button>
+              </svg> </button>
 
             <button class="card__like-button button-animated" type="button">
               <span class="button__text">Like</span>
@@ -196,17 +206,17 @@
 
         <div class="card__content">
           <div class="card__image-border">
-          <div class="card__image-wrapper">
-            <picture>
-              <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
-              <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--sepia" />
-            </picture>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" >
+                <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--sepia" loading="lazy">
+              </picture>
 
-            <img class="card__watermark" src="./images/watermark-4.png" alt="Водяной знак с надписью <desigions>"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-            <span class="card__watermark-fallback">&lt;/HTML&gt;</span>
+              <img class="card__watermark" src="./images/watermark-4.png" alt="Водяной знак с надписью desigions" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" >
+              <span class="card__watermark-fallback">&lt;desigions&gt;</span>
+            </div>
           </div>
-        </div>
           <div class="card__description">
             <p class="card__text">
               На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы
@@ -214,27 +224,30 @@
               перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний о начале второго спринта.
+              Я пытался сделать всё «как в макете», пиксель в пиксель. Исправлял снова и снова, пока не начал выгорать.
+              И тут дошло — идеал недостижим. Но он вдохновляет.
             </p>
           </div>
 
           <div class="card__footer">
             <button class="card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-                
                 <g class="heart">
                   <!-- Контур -->
-                <path class="contour" fill="var(--contour-color)" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z"/>
+                  <path class="contour" fill="var(--contour-color)"
+                    d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
                   <!-- Основное тело -->
-                <path class="main-body" transform="translate(5.5, 7)" fill="none" d="M6 0H3v3h3V0ZM6 3H3v3h3V3ZM9 6H6v3h3V6ZM12 3H9v3h3V3ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 9H3v3h3V9ZM6 12H3v3h3v-3ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM12 9H9v3h3V9ZM12 6H9v3h3V6ZM12 15H9v3h3v-3ZM12 12H9v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM21 3h3v3h-3V3ZM18 3h3v3h-3V3ZM21 6h3v3h-3V6ZM18 6h3v3h-3V6ZM15 3h3v3h-3V3ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 9h3v3h-3V9ZM21 12h3v3h-3v-3ZM18 9h3v3h-3V9ZM18 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 9h3v3h-3V9ZM15 6h3v3h-3V6ZM15 15h3v3h-3v-3ZM15 12h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 9h-3v3h3V9ZM15 6h-3v3h3V6ZM15 15h-3v3h3v-3ZM15 12h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3Z"/>
+                  <path class="main-body" fill="none"
+                    d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
                   <!-- Сердцевина -->
-                <path class="core" fill="none" d="M21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z"/><path fill="#000" d="M21 27h-3v3h3v-3Z"/>
+                  <path class="core" fill="none"
+                    d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
                 </g>
                 <g class="sparks">
-                  <path class="spark" fill="var(--animation-fill-color)" d="M12 6H9v3h3V6ZM12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 15H9v3h3v-3ZM12 18H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3ZM18 15h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 15h3v3h-3v-3ZM27 18h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 15h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 21h-3v3h3v-3ZM21 18h-3v3h3v-3ZM21 24h-3v3h3v-3ZM21 27h-3v3h3v-3Z"/>
+                  <path class="spark" fill="var(--animation-fill-color)"
+                    d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
                 </g>
               </svg>
-              
             </button>
 
             <button class="card__like-button button-animated" type="button">
@@ -248,17 +261,17 @@
 
         <div class="card__content">
           <div class="card__image-border">
-          <div class="card__image-wrapper">
-            <picture>
-              <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
-              <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--mint" />
-            </picture>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp">
+                <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--mint" loading="lazy">
+              </picture>
 
-            <img class="card__watermark" src="./images/watermark-5.png" alt="Водяной знак с надписью care"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-            <span class="card__watermark-fallback">&lt;/HTML&gt;</span>
+              <img class="card__watermark" src="./images/watermark-5.png" alt="Водяной знак с надписью care" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+              <span class="card__watermark-fallback">care</span>
+            </div>
           </div>
-        </div>
           <div class="card__description">
             <p class="card__text">
               Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). Вас
@@ -267,27 +280,30 @@
               не правда ли?
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний об окончании второго спринта.
+              Иногда поддержка — это не советы, а просто «у меня тоже всё сломалось». Вместе грустим — вместе чиним.
+              Почти как тимбилдинг, только с ошибками.
             </p>
           </div>
 
           <div class="card__footer">
             <button class="card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-                
                 <g class="heart">
                   <!-- Контур -->
-                <path class="contour" fill="var(--contour-color)" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z"/>
+                  <path class="contour" fill="var(--contour-color)"
+                    d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
                   <!-- Основное тело -->
-                <path class="main-body" transform="translate(5.5, 7)" fill="none" d="M6 0H3v3h3V0ZM6 3H3v3h3V3ZM9 6H6v3h3V6ZM12 3H9v3h3V3ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 9H3v3h3V9ZM6 12H3v3h3v-3ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM12 9H9v3h3V9ZM12 6H9v3h3V6ZM12 15H9v3h3v-3ZM12 12H9v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM21 3h3v3h-3V3ZM18 3h3v3h-3V3ZM21 6h3v3h-3V6ZM18 6h3v3h-3V6ZM15 3h3v3h-3V3ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 9h3v3h-3V9ZM21 12h3v3h-3v-3ZM18 9h3v3h-3V9ZM18 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 9h3v3h-3V9ZM15 6h3v3h-3V6ZM15 15h3v3h-3v-3ZM15 12h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 9h-3v3h3V9ZM15 6h-3v3h3V6ZM15 15h-3v3h3v-3ZM15 12h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3Z"/>
+                  <path class="main-body" fill="none"
+                    d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
                   <!-- Сердцевина -->
-                <path class="core" fill="none" d="M21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z"/><path fill="#000" d="M21 27h-3v3h3v-3Z"/>
+                  <path class="core" fill="none"
+                    d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
                 </g>
                 <g class="sparks">
-                  <path class="spark" fill="var(--animation-fill-color)" d="M12 6H9v3h3V6ZM12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 15H9v3h3v-3ZM12 18H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3ZM18 15h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 15h3v3h-3v-3ZM27 18h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 15h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 21h-3v3h3v-3ZM21 18h-3v3h3v-3ZM21 24h-3v3h3v-3ZM21 27h-3v3h3v-3Z"/>
+                  <path class="spark" fill="var(--animation-fill-color)"
+                    d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
                 </g>
               </svg>
-              
             </button>
 
             <button class="card__like-button button-animated" type="button">
@@ -301,17 +317,17 @@
 
         <div class="card__content">
           <div class="card__image-border">
-          <div class="card__image-wrapper">
-            <picture>
-              <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
-              <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--gray" />
-            </picture>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp">
+                <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--gray" loading="lazy">
+              </picture>
 
-            <img class="card__watermark" src="./images/watermark-6.png" alt="Водяной знак с надписью <support>"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-            <span class="card__watermark-fallback">&lt;/HTML&gt;</span>
+              <img class="card__watermark" src="./images/watermark-6.png" alt="Водяной знак с надписью support" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+              <span class="card__watermark-fallback">&lt;support&gt;</span>
+            </div>
           </div>
-        </div>
 
           <div class="card__description">
             <p class="card__text">
@@ -319,27 +335,31 @@
               просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.
             </p>
             <p class="card__text">
-              Место для ваших воспоминаний о начале третьего спринта.
+              Тут я впервые начал не просто писать код, а думать как разработчик. Когда не получалось, искал обходной
+              путь. Начал понимать, что важна не только сила, но и гибкость. Это спринт про смекалку. И немного про
+              магию.
             </p>
           </div>
 
           <div class="card__footer">
             <button class="card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-                
                 <g class="heart">
                   <!-- Контур -->
-                <path class="contour" fill="var(--contour-color)" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z"/>
+                  <path class="contour" fill="var(--contour-color)"
+                    d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
                   <!-- Основное тело -->
-                <path class="main-body" transform="translate(5.5, 7)" fill="none" d="M6 0H3v3h3V0ZM6 3H3v3h3V3ZM9 6H6v3h3V6ZM12 3H9v3h3V3ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 9H3v3h3V9ZM6 12H3v3h3v-3ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM12 9H9v3h3V9ZM12 6H9v3h3V6ZM12 15H9v3h3v-3ZM12 12H9v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM21 3h3v3h-3V3ZM18 3h3v3h-3V3ZM21 6h3v3h-3V6ZM18 6h3v3h-3V6ZM15 3h3v3h-3V3ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 9h3v3h-3V9ZM21 12h3v3h-3v-3ZM18 9h3v3h-3V9ZM18 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 9h3v3h-3V9ZM15 6h3v3h-3V6ZM15 15h3v3h-3v-3ZM15 12h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 9h-3v3h3V9ZM15 6h-3v3h3V6ZM15 15h-3v3h3v-3ZM15 12h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3Z"/>
+                  <path class="main-body" fill="none"
+                    d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
                   <!-- Сердцевина -->
-                <path class="core" fill="none" d="M21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z"/><path fill="#000" d="M21 27h-3v3h3v-3Z"/>
+                  <path class="core" fill="none"
+                    d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
                 </g>
                 <g class="sparks">
-                  <path class="spark" fill="var(--animation-fill-color)" d="M12 6H9v3h3V6ZM12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 15H9v3h3v-3ZM12 18H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3ZM18 15h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 15h3v3h-3v-3ZM27 18h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 15h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 21h-3v3h3v-3ZM21 18h-3v3h3v-3ZM21 24h-3v3h3v-3ZM21 27h-3v3h3v-3Z"/>
+                  <path class="spark" fill="var(--animation-fill-color)"
+                    d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
                 </g>
               </svg>
-
             </button>
 
             <button class="card__like-button button-animated" type="button">
@@ -353,55 +373,58 @@
 
         <div class="card__content">
           <div class="card__image-border">
-          <div class="card__image-wrapper">
+            <div class="card__image-wrapper">
               <picture>
-                <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
-                <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--blur" />
+                <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" >
+                <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--blur" loading="lazy">
               </picture>
-            
 
-              <img class="card__watermark" src="./images/watermark-7.png" alt="Водяной знак с надписью <experience>"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-              <span class="card__watermark-fallback">&lt;/HTML&gt;</span>
+
+              <img class="card__watermark" src="./images/watermark-7.png" alt="Водяной знак с надписью lifes-style: none;" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+              <span class="card__watermark-fallback">&lt;lifes-style: none;&gt;</span>
+            </div>
           </div>
-        </div>
 
-            <div class="card__description">
-              <p class="card__text">
-                Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора
-                сдавать,
-                и задачи хочется <br> порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты
-                очень
-                нужна концентрация. Вспомните, откуда вы её черпали.
-              </p>
-              <p class="card__text">
-                Место для ваших воспоминаний об окончании третьего спринта.
-              </p>
-            </div>
+          <div class="card__description">
+            <p class="card__text">
+              Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора
+              сдавать,
+              и задачи хочется <br> порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты
+              очень
+              нужна концентрация. Вспомните, откуда вы её черпали.
+            </p>
+            <p class="card__text">
+              Была точка, когда я хотел просто всё бросить. Ошибка за ошибкой, файлы не грузятся, сверстал, а ничего не
+              работает. Но я сделал перерыв. И вернулся. Потому что слишком много вложено, чтобы останавливаться.
+            </p>
+          </div>
 
-            <div class="card__footer">
-              <button class="card__icon-button" type="button">
-                <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-                  
-                  <g class="heart">
-                    <!-- Контур -->
-                  <path class="contour" fill="var(--contour-color)" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z"/>
-                    <!-- Основное тело -->
-                  <path class="main-body" transform="translate(5.5, 7)" fill="none" d="M6 0H3v3h3V0ZM6 3H3v3h3V3ZM9 6H6v3h3V6ZM12 3H9v3h3V3ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 9H3v3h3V9ZM6 12H3v3h3v-3ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM12 9H9v3h3V9ZM12 6H9v3h3V6ZM12 15H9v3h3v-3ZM12 12H9v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM21 3h3v3h-3V3ZM18 3h3v3h-3V3ZM21 6h3v3h-3V6ZM18 6h3v3h-3V6ZM15 3h3v3h-3V3ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 9h3v3h-3V9ZM21 12h3v3h-3v-3ZM18 9h3v3h-3V9ZM18 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 9h3v3h-3V9ZM15 6h3v3h-3V6ZM15 15h3v3h-3v-3ZM15 12h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 9h-3v3h3V9ZM15 6h-3v3h3V6ZM15 15h-3v3h3v-3ZM15 12h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3Z"/>
-                    <!-- Сердцевина -->
-                  <path class="core" fill="none" d="M21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z"/><path fill="#000" d="M21 27h-3v3h3v-3Z"/>
-                  </g>
-                  <g class="sparks">
-                    <path class="spark" fill="var(--animation-fill-color") d="M12 6H9v3h3V6ZM12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 15H9v3h3v-3ZM12 18H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3ZM18 15h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 15h3v3h-3v-3ZM27 18h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 15h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 21h-3v3h3v-3ZM21 18h-3v3h3v-3ZM21 24h-3v3h3v-3ZM21 27h-3v3h3v-3Z"/>
-                  </g>
-                </svg>
-                
-              </button>
+          <div class="card__footer">
+            <button class="card__icon-button" type="button">
+              <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
+                <g class="heart">
+                  <!-- Контур -->
+                  <path class="contour" fill="var(--contour-color)"
+                    d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                  <!-- Основное тело -->
+                  <path class="main-body" fill="none"
+                    d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                  <!-- Сердцевина -->
+                  <path class="core" fill="none"
+                    d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+                </g>
+                <g class="sparks">
+                  <path class="spark" fill="var(--animation-fill-color)"
+                    d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+                </g>
+              </svg>
+            </button>
 
-              <button class="card__like-button button-animated" type="button">
-                <span class="button__text">Like</span>
-              </button>
-            </div>
+            <button class="card__like-button button-animated" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
         </div>
       </article>
 
@@ -410,17 +433,17 @@
 
         <div class="card__content">
           <div class="card__image-border">
-          <div class="card__image-wrapper">
-            <picture>
-              <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp" />
-              <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--red" />
-            </picture>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="./images/card-1@x2.webp 2x, ./images/card-1.webp 1x" type="image/webp">
+                <img src="./images/card-1.png" alt="Фургон в пиксель-арте" class="card__image card__image--red" loading="lazy">
+              </picture>
 
-            <img class="card__watermark" src="./images/watermark-8.png" alt="Водяной знак с надписью <experience>"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-            <span class="card__watermark-fallback">&lt;/HTML&gt;</span>
+              <img class="card__watermark" src="./images/watermark-8.png" alt="Водяной знак с надписью experience" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+              <span class="card__watermark-fallback">&lt;experience&gt;</span>
+            </div>
           </div>
-        </div>
           <div class="card__description">
             <p class="card__text">
               Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала
@@ -429,27 +452,30 @@
               познания. Ведь часто путь — и есть результат.
             </p>
             <p class="card__text">
-              Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
+              Я смотрю назад — и не верю, сколько уже пройдено. Я больше не чистый лист. Я человек, который начал,
+              продолжил, не сдался. Я не просто здесь — я двигаюсь вперёд. И самое интересное ещё впереди.
             </p>
           </div>
 
           <div class="card__footer">
             <button class="card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-                
-                <g class="heart" >
+                <g class="heart">
                   <!-- Контур -->
-                <path class="contour"  d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z"/>
+                  <path class="contour" fill="var(--contour-color)"
+                    d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
                   <!-- Основное тело -->
-                <path class="main-body" transform="translate(5.5, 7)"  d="M6 0H3v3h3V0ZM6 3H3v3h3V3ZM9 6H6v3h3V6ZM12 3H9v3h3V3ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 9H3v3h3V9ZM6 12H3v3h3v-3ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM12 9H9v3h3V9ZM12 6H9v3h3V6ZM12 15H9v3h3v-3ZM12 12H9v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM21 3h3v3h-3V3ZM18 3h3v3h-3V3ZM21 6h3v3h-3V6ZM18 6h3v3h-3V6ZM15 3h3v3h-3V3ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 9h3v3h-3V9ZM21 12h3v3h-3v-3ZM18 9h3v3h-3V9ZM18 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 9h3v3h-3V9ZM15 6h3v3h-3V6ZM15 15h3v3h-3v-3ZM15 12h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 9h-3v3h3V9ZM15 6h-3v3h3V6ZM15 15h-3v3h3v-3ZM15 12h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3Z"/>
+                  <path class="main-body" fill="none"
+                    d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
                   <!-- Сердцевина -->
-                <path class="core" d="M21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 18h-3v3h3v-3Z"/><path fill="#000" d="M21 27h-3v3h3v-3Z"/>
+                  <path class="core" fill="none"
+                    d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
                 </g>
                 <g class="sparks">
-                  <path class="spark" fill="var(--animation-fill-color)" d="M12 6H9v3h3V6ZM12 9H9v3h3V9ZM15 12h-3v3h3v-3ZM18 9h-3v3h3V9ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 15H9v3h3v-3ZM12 18H9v3h3v-3ZM15 15h-3v3h3v-3ZM15 18h-3v3h3v-3ZM15 21h-3v3h3v-3ZM18 15h-3v3h3v-3ZM18 12h-3v3h3v-3ZM18 21h-3v3h3v-3ZM18 18h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM27 9h3v3h-3V9ZM24 9h3v3h-3V9ZM27 12h3v3h-3v-3ZM24 12h3v3h-3v-3ZM21 9h3v3h-3V9ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM36 13h3v3h-3v-3ZM27 27h3v3h-3v-3ZM18 33h3v3h-3v-3ZM9 27h3v3H9v-3ZM24 0h3v3h-3V0ZM33 3h3v3h-3V3ZM3 3h3v3H3V3ZM12 0h3v3h-3V0ZM0 13h3v3H0v-3ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 15h3v3h-3v-3ZM27 18h3v3h-3v-3ZM24 15h3v3h-3v-3ZM24 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 15h3v3h-3v-3ZM21 12h3v3h-3v-3ZM21 21h3v3h-3v-3ZM21 18h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 15h-3v3h3v-3ZM21 12h-3v3h3v-3ZM21 21h-3v3h3v-3ZM21 18h-3v3h3v-3ZM21 24h-3v3h3v-3ZM21 27h-3v3h3v-3Z"/>
+                  <path class="spark" fill="var(--animation-fill-color)"
+                    d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
                 </g>
               </svg>
-              
             </button>
 
             <button class="card__like-button button-animated" type="button">
@@ -477,7 +503,8 @@
           </div>
         </div>
         <form method="dialog">
-          <button class="modal__button button__text " type="submit">Ок</button>
+          <button class="modal__button  button-animated" type="submit">
+            <span class="button__text">Ок</span></button>
         </form>
       </dialog>
     </div>

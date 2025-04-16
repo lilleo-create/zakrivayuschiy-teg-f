@@ -39,6 +39,13 @@
 .button-animated {
   position: relative;
   color: var(--button-color);
+  transition: box-shadow 0.3s linear;
+  
+}
+
+.button-animated:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+  outline: none;
 }
 
 .button-animated .floppy-icon {
@@ -65,9 +72,7 @@
 .like-icon {
   display: block;
   cursor: pointer;
-  block-size: 38px;
   inline-size: 38px;
-  aspect-ratio: 39 / 36;
 }
 
 .heart {
@@ -90,7 +95,7 @@
 
 .like-icon:hover .main-body {
   fill: var(--contour-color);
-  transition: fill 0.3s 0.3s 0.5s linear;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:not(:hover) .main-body {
@@ -105,8 +110,20 @@
 
 .like-icon:active .core,
 .like-icon:active .main-body {
-  fill: var(--animation-fill-color); /* красный цвет */
+  fill: var(--animation-fill-color);
   transition: fill 0.3s ease;
+}
+
+.like-icon:active .core {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s ease;
+  transition-delay: 0s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s ease;
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .core {
@@ -118,7 +135,6 @@
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
   transition: fill 0.3s ease;
-  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
@@ -144,5 +160,3 @@
 .like-icon.is-liked .heart {
   animation: scale-heart 0.3s ease-in 0.1s both;
 }
-
-

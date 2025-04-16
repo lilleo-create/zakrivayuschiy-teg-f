@@ -4,15 +4,14 @@
 :root {
   --font-main: 'Inter', sans-serif;
   --font-accent: 'PressStart2P', fantasy;
-
-  --wght: 700;
+  --wght: 801;
   --wdth: 100;
-  --card-title-weight: 700;
+  --card-title-weight: 801;
   --card-text-weight: 400;
   --title-font-size: clamp(4.7rem, 6vw, 6.2rem);
-  --subtitle-font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  --subtitle-font-size: clamp(1.3rem, 3.7vw, 2.2rem);
   --header-width: clamp(375px, 100%, 700px);
-  --font-wegt: 400px;
+  --font-weigh: 400px;
   --card-width: clamp(375px, 100%, 700px);
   --card-title-font-size: 1.7rem;
   --outline-color: #fff;
